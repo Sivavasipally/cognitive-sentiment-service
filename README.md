@@ -19,12 +19,13 @@ Feature	Description
 
 Imagine a customer support AI system built from cognitive microservices:
 
-Microservice	Function
-**nlp-intent-detector**	Classifies customer messages (complaint, inquiry, etc.)
-**sentiment-analyzer**	Evaluates emotional tone
-**entity-extractor**	Identifies products, locations, or user info
-**response-generator**	Suggests replies using an LLM
-**context-memory**	Manages conversation state
+|Microservice	|Function|
+
+1. [ ] **nlp-intent-detector**	Classifies customer messages (complaint, inquiry, etc.)
+2. [ ] **sentiment-analyzer**	Evaluates emotional tone
+3. [ ] **entity-extractor**	Identifies products, locations, or user info
+4. [ ] **response-generator**	Suggests replies using an LLM
+5. [ ] **context-memory**	Manages conversation state
 
 These services communicate over APIs (e.g., using JSON over HTTP or message queues like Kafka).
 
@@ -62,7 +63,6 @@ if CPU : pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/c
         INFO:     Waiting for application startup.
         INFO:     Application startup complete.
         INFO:     Uvicorn running on http://localhost:8000 (Press CTRL+C to quit)``
-
 
     **Api** : curl -X POST "http://localhost:8000/analyze" \
          -H "Content-Type: application/json" \
